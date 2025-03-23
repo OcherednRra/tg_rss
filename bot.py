@@ -185,7 +185,7 @@ class RSSFeedMonitor:
                     return
 
                 # Process entries from newest to oldest
-                for entry in reversed(feed.entries[:10]):  # Limit to latest 10 entries
+                for entry in reversed(feed.entries[:1]):  # Limit to latest 1 entries
                     entry_id = entry.get("id", entry.get("link", ""))
                     if not entry_id or entry_id in posted_articles:
                         continue
