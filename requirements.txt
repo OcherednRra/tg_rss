@@ -1,0 +1,5 @@
+aiogram
+aiohttp
+feedparser
+beautifulsoup4
+python-dotenv
